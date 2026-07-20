@@ -18,15 +18,11 @@ let posts = [
         username:"aditya",
         content:"student pursuing computer science",
     },
+    
     {
         id:uuidv4(),
-        username:"unirexx",
-        content:"3 times consecutive best writer award winner",
-    },
-    {
-        id:uuidv4(),
-        username:"xabi",
-        content:"i am gonna be a frikin legend",
+        username:"Wonder_visit_show",
+        content:"Gonna Add review feature",
     },
 ]
 
