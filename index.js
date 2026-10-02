@@ -10,6 +10,11 @@ app.use(methodOverride('_method'));
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
+
+app.all("/",(req,res)=>{
+    res.redirect("/posts");
+});
+
 app.use(express.static(path.join(__dirname,"public")));
 
 let posts = [
@@ -25,7 +30,6 @@ let posts = [
         content:"Gonna Add review feature",
     },
 ]
-
 
 app.get("/posts",(req,res)=>{
     res.render("index.ejs",{posts});
